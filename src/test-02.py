@@ -5,7 +5,8 @@ import akshare as ak
 def stock_zh_a_daily(symbol: str) -> str:
     """获取A股日线数据
     Args:
-        symbol: 股票代码，例如 "sh600000    """
+        symbol: 股票代码，例如 sh600000    
+    """
     
     df = ak.stock_cy_a_spot_em()
     return df.head().to_string()
